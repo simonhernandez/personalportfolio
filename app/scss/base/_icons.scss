@@ -1,0 +1,25 @@
+/*
+    ------------------------
+    -------- Icons ---------
+    ------------------------
+*/
+
+.icon{
+    
+    &--address{
+        font-size: var(--fs-icon-lg);
+        color: var(--color-primary);
+    }
+
+    &--skill{
+        color: var(--color-icon-bg-gray);
+        font-size: var(--fs-icon-xxl);
+    }
+    
+    &--social{
+        font-size: var(--fs-icon-sm);
+    }
+    &:hover{
+        color: var(--color-primary);
+    }
+}

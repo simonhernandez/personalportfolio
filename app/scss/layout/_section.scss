@@ -1,0 +1,44 @@
+/*
+    ------------------------
+    ------- Section --------
+    ------------------------
+*/
+
+.section{
+
+    .wrapper > *:not(:last-child){
+        margin-bottom: var(--space-xl);
+    }
+
+    &__header{
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-sm);
+        }
+
+        .heading{
+            &--2{
+                // Heading Underline Pseudo Element
+                display: inline-block;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: var(--header-height);
+                    
+                }
+
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 80px;
+                    height: 5px;
+                    background-color: var(--color-primary);
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

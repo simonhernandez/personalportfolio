@@ -1,0 +1,65 @@
+/*
+    ------------------------
+    -------- Contact -------
+    ------------------------
+*/
+
+.contact{
+    background-color: var(--color-primary-very-light);
+    text-align: center;
+
+    &__text-container{
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-sm);
+        }
+    }
+
+    &__email-container{
+        margin-bottom: var(--space-md);
+
+        div{
+            a {
+                display: block;
+            }
+        }
+    }
+
+    .form{
+        margin: 0 auto;
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(large){
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        header{
+            grid-column: 1/-1;
+        }
+
+        &__text-container{
+            text-align: left;
+            grid-column: 1 / 6;
+            align-self: center;
+        }
+
+        .form{
+            text-align: left;
+            grid-column: 8 / -1;
+            align-self: center
+        }
+
+        &__email-container,
+        &__phone-container{
+            @include flex(fs, c, row);
+
+            .icon{
+                margin-right: 1rem;
+                align-self: flex-start;
+            }
+        }
+    }
+}

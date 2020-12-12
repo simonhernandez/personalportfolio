@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Hernandez | Frontend Dev</title>
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./app/css/main.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="./node_modules/flag-icon-css/css/flag-icon.css">
+
+    <!-- Reveal On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <!-- Wrapper -->
+        <div class="wrapper">
+
+            <!-- Header - Navigation -->
+            <nav class="nav nav--header">
+
+                <!-- Nav - Logo -->
+                <a href="/" class="nav__logo">
+                    <strong>Simon H.</strong>
+                </a>
+
+                <!-- Nav - Menu -->
+                <ul class="nav__menu" id="menu">
+                    <li class="nav__item active"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <button class="nav__toggle hide-for-desktop" id="navToggle"></button>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Section - Hero -->
+        <section class="section hero" id="home">
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+
+                <!-- Hero Image -->
+                <div class="hero__image-container" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./assets/img/simon-hero.png" alt="A Photo of Simon Hernandez" class="hero__img">
+                </div>
+
+                <!-- Hero Text -->
+                <div class="hero__text-container" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="heading heading--1">
+                        Hi, <br>
+                        I am <span class="text-orange">Simon</span> <br>
+                        <span id="dynamic_text"></span>
+                    </h1>
+
+                    <button class="btn btn--primary">Download CV</button>
+
+                    <p class="paragraph">
+                        Want to work together?
+                        <a href="#contact" class="text-orange"><strong>Contact me</strong></a>
+                    </p>
+                </div>
+
+            </div> <!-- // Wrapper -->
+
+        </section> <!-- // Section - Hero -->
+
+        <!-- Section - About -->
+        <section class="section about" id="about">
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+
+                <!-- About - Header -->
+                <header class="section__header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="heading heading--2">About</h2>
+                </header>
+    
+                <!-- About Image -->
+                <div class="about__image-container" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/img/simon-about.png" alt="A Photo of Simon Hernandez" class="hero__img">
+                </div>
+    
+                <!-- About Text -->
+                <div class="about__text-container" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="heading heading--3">
+                        I am
+                        <span class="text-orange">Simon Hernandez</span>
+                    </h3>
+    
+                    <p class="paragraph">
+                        ... a 23 year old Frontend Developer with a Bachelor's Degree in Telecommunication Engineering. <br> <br>
+                        I am proactive, organized and self-taught, capable of performing tasks that require
+                        team work, problem solving, and strong communication skills. <br> <br>
+                        Passionate about web technologies, telematics and baseball.
+                    </p>
+    
+                    <a href="#contact" class="btn btn--primary">Contact Me</a>
+    
+                    <!-- Social List -->
+                    <ul class="social">
+                        <li class="social__item"><a href="https://instagram.com/simonhb97/" class="social__link" target="_blank"><i class='icon icon--social bx bxl-instagram' ></i></a></li>
+                        <li class="social__item"><a href="https://linkedin.com/in/simonhernandezbarboza/" class="social__link" target="_blank"><i class='icon icon--social bx bxl-linkedin-square' ></i></a></li>
+                        <li class="social__item"><a href="https://github.com/simonhernandez" class="social__link" target="_blank"><i class='icon icon--social bx bxl-github'></i></a></li>
+                        <li class="social__item"><a href="https://codepen.io/simonhernandez" class="social__link" target="_blank"><i class='icon icon--social bx bxl-codepen' ></i></a></li>
+                    </ul>
+                </div>
+
+            </div> <!-- // Wrapper -->
+
+        </section><!-- // Section - About -->
+
+        <!-- Section - Skills -->
+        <section class="section skills" id="skills">
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+
+                <!-- Skills - Header -->
+                <header class="section__header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="heading heading--2">Skills</h2>
+                </header>
+
+                <!-- Subsection - Frontend Development -->
+                <section class="skills__subsection">
+
+                    <!-- Image Container -->
+                    <div class="skills__image-container skills__image-container--right" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="./assets/img/frontend.svg" alt="An illustration of a person coding" class="skills__img">
+                    </div>
+
+                    <!-- Text Container -->
+                    <div class="skills__text-container skills__text-container--left" data-aos="fade-right" data-aos-duration="1000">
+                        <h3 class="heading heading--3 text-orange">Frontend Development</h3>
+                        <p class="paragraph">
+                            I began my coding journey early on as a college freshman after taking a couple of programming courses. <br> Eventually ended up 
+                            teaching myself about the web and the technologies that it is built upon.
+                        </p>
+                        <p class="paragraph">
+                            I am curiosity-driven, detail-oriented and a lover of clean, organized and well-written code.
+                        </p>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-html5' ></i><small>html</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-css3'></i><small>css</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-javascript' ></i><small>javascript</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-sass' ></i><small>sass</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-bootstrap' ></i><small>bootstrap</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-git' ></i><small>git</small></li>
+                            <li class="skills__item"><i class='icon icon--skill bx bxl-github' ></i><small>github</small></li>
+                        </ul>
+                    </div>
+
+                </section> <!-- // Subsection - Frontend Development -->
+
+                <!-- Subsection - Languages -->
+                <section class="skills__subsection">
+
+                    <!-- Image Container -->
+                    <div class="skills__image-container skills__image-container--left" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./assets/img/languages.svg" alt="An illustration of people speaking" class="skills__img">
+                    </div>
+
+                    <!-- Text Container -->
+                    <div class="skills__text-container skills__text-container--right" data-aos="fade-left" data-aos-duration="1000">
+                        <h3 class="heading heading--3 text-orange">Languages</h3>
+                        <p class="paragraph">
+                            I speak a total of 3 languages. 
+                        </p>
+                        <p class="paragraph">
+                            Spanish as mother language, English and German at an advanced level, both spoken and written.
+                        </p>
+
+                        <ul class="skills__list">
+                            <li class="skills__item"><span class="flag-icon flag-icon-es"></span><small>spanish</small></li>
+                            <li class="skills__item"><span class="flag-icon flag-icon-gb"></span><small>english</small></li>
+                            <li class="skills__item"><span class="flag-icon flag-icon-de"></span><small>german</small></li>
+                        </ul>
+                    </div>
+                </section> <!-- // Subsection - Languages -->
+            </div> <!-- // Wrapper -->
+
+
+        </section> <!-- // Section - Skills -->
+
+        <!-- Section - Portfolio -->
+        <section class="section portfolio" id="portfolio">
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+
+                <!-- Portfolio - Header -->
+                <header class="section__header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="heading heading--2">Portfolio</h2>
+                    <p class="paragraph">
+                        Here you will find some of my best work on web frontend development.
+                    </p>
+                </header>
+
+                <!-- Portfolio List -->
+                <ul class="portfolio__list">
+
+                    <!-- Portfolio Project - 01 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio01.png" alt="A Preview Image of a the PayAPI Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">scss</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">PayAPI</h4>
+
+                            <p class="paragraph text-small">
+                                Four page website that showcases the features of the PayAPI solution, an API that allows business owners to accept online payments with ease.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/simonhernandez/payapi" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="http://payapi.vercel.app/" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 01 -->
+
+                    <!-- Portfolio Project - 02 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio02.png" alt="A Preview Image of a the Scoot Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">scss</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">Scoot</h4>
+
+                            <p class="paragraph text-small">
+                                Multipage website that showcases the Scoot App. An app that makes urban mobility easier, simple and fun.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/simonhernandez/scootMultiPage" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="http://scoot-multi-page.vercel.app/" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 02 -->
+
+                    <!-- Portfolio Project - 03 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio03.png" alt="A Preview Image of a the Pod Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">tailwindcss</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">Pod Landing Page</h4>
+
+                            <p class="paragraph text-small">
+                                Single Landing Page that promotes Pod. A service that enables you to upload your Podcast to all streaming platforms with just a click.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/simonhernandez/podLandingPage" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="http://pod-landing-page.simonhernandez.vercel.app/" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 03 -->
+
+                    <!-- Portfolio Project - 04 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio04.png" alt="A Preview Image of a the TrackApp Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">css</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">TrackApp</h4>
+
+                            <p class="paragraph text-small">
+                                Single Landing Page that showcases TrackApp. An app that improves project planning and time tracking for agile teams.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/simonhernandez/projectTrackComponent/tree/master" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="https://project-track-component-f37axp27m.vercel.app/" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 04 -->
+
+                    <!-- Portfolio Project - 05 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio05.png" alt="A Preview Image of a the myTeam Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">scss</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">MyTeam</h4>
+
+                            <p class="paragraph text-small">
+                                Four page website that showcases MyTeam. A platform that allows you to Build & manage distributed teams like no one else.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="https://github.com/simonhernandez/myTeamMultiPage" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="https://my-team-multi-page.vercel.app/" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 05 -->
+
+                    <!-- Portfolio Project - 06 -->
+                    <li class="portfolio__item" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="portfolio__image-container">
+                            <img src="./assets/img/Portfolio06.png" alt="A Preview Image of a the Officelite Project" class="portfolio__img">
+                        </div>
+
+                        <div class="portfolio__text-container">
+                            <ul class="portfolio__technologies">
+                                <li class="technology">html</li>
+                                <li class="technology">scss</li>
+                                <li class="technology">js</li>
+                            </ul>
+
+                            <h4 class="heading heading--4">Officelite Landing</h4>
+
+                            <p class="paragraph text-small">
+                                Two page website that showcases Officelite. A collaboration platform to manage your project and improve productivity.
+                            </p>
+
+                            <div class="portfolio__buttons">
+                                <a href="#" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Code</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+
+                                <a href="#" class="btn btn--ghost btn--small" target="_blank">
+                                    <span class="text-xs">View Site</span>
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li> <!-- // Portfolio Project - 06 -->
+
+                </ul> <!-- // Portfolio List -->
+
+            </div> <!-- // Wrapper -->
+
+        </section> <!-- // Section - Portfolio -->
+
+        <!-- Section - Contact -->
+        <section class="section contact" id="contact">
+
+            <!-- Wrapper -->
+            <div class="wrapper">
+
+                <!-- Contact - Header -->
+                <header class="section__header" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="heading heading--2">Contact</h2>
+                </header>
+
+                <!-- Text Container -->
+                <div class="contact__text-container" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 class="heading heading--3 text-orange">Get in touch</h3>
+
+                    <p class="paragraph">
+                        If you are interested in working together, please feel free to shoot me an email or send me a message to my Whatsapp or Telegram, anytime. I will get back to you as soon as possible.
+                    </p>
+
+                    <address class="contact__address">
+                        <div class="contact__email-container">
+                            <i class='icon icon--address bx bxs-envelope'></i>
+                            <div>
+                                <a href="mailto:hello@simon-hernandez.com" class="contact__email">hello@simon-hernandez.com</a>
+                                <a href="mailto:simonhernandezbarboza@gmail.com" class="contact__email">simonhernandezbarboza@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__phone-container">
+                            <i class='icon icon--address bx bxs-phone'></i>
+                            <div>
+                                <a href="tel:+584142905911" class="contact__phone">+(58) 414 - 2905911</a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+
+                <!-- Form -->
+                <form action="" class="form" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="heading heading--3">Send me a message!</h3>
+
+                    <div class="form__control form__control--name">
+                        <input type="text" name="" id="name" placeholder="Name">
+                    </div>
+
+                    <div class="form__control form__control--email">
+                        <input type="text" name="" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="form__control form__control--subject">
+                        <input type="text" name="" id="subject" placeholder="Subject">
+                    </div>
+
+                    <textarea name="" id="textarea" cols="30" rows="10" class="form__textarea" placeholder="Message"></textarea>
+
+                    <!-- <input type="submit" value="SEND" class="btn btn--primary"> -->
+
+                    <button class="btn btn--primary btn--small">SEND</button>
+                </form>
+
+            </div> <!-- // Wrapper -->
+
+        </section> <!-- // Section - Contact -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Wrapper -->
+        <div class="wrapper">
+
+            <!-- Footer - Brand -->
+            <div class="brand" data-aos="fade" data-aos-duration="1000">
+                <h2 class="heading heading--2 text-orange"><a href="/">Simon Hernandez</a></h2>
+                <small class="copyright">&copy; 2020 copyright all rights reserved</small>
+            </div>
+
+            <!-- Footer - Navigation -->
+            <nav class="nav nav--footer" data-aos="fade" data-aos-duration="1000">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social List -->
+            <ul class="social" data-aos="fade" data-aos-duration="1000">
+                <li class="social__item"><a href="https://instagram.com/simonhb97" class="social__link" target="_blank"><i class='icon icon--social bx bxl-instagram' ></i></a></li>
+                <li class="social__item"><a href="https://linkedin.com/in/simonhernandezbarboza/" class="social__link" target="_blank"><i class='icon icon--social bx bxl-linkedin-square' ></i></a></li>
+                <li class="social__item"><a href="https://github.com/simonhernandez" class="social__link" target="_blank"><i class='icon icon--social bx bxl-github'></i></a></li>
+                <li class="social__item"><a href="https://codepen.io/simonhernandez" class="social__link" target="_blank"><i class='icon icon--social bx bxl-codepen' ></i></a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./app/js/toggle.js"></script>
+    <script src="./node_modules/ityped/dist/index.js" ></script>
+    <script src="./app/js/ityped.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: 'mobile',
+      });
+    </script>
+
+</body>
+</html>

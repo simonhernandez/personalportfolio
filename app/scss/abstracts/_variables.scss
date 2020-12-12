@@ -1,0 +1,161 @@
+/*
+    ------------------------
+    ---- Google Fonts ------
+    ------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
+
+/*
+    ------------------------
+    ------ Variables -------
+    ------------------------
+*/
+
+// Typograhpy
+
+:root{
+    // Font family
+    --ff-primary: 'Noto Sans', sans-serif;
+    --ff-secondary: 'Montserrat', sans-serif;
+    
+    // Font weight
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    
+    // Font size
+    --fs-base: 1em;
+    --fs-scale-ratio: 1.2;
+
+    // Scale
+    --fs-xs: calc(1em / (var(--fs-scale-ratio) * var(--fs-scale-ratio)));
+    --fs-sm: calc(1em / var(--fs-scale-ratio));
+    --fs-md: calc(1em * var(--fs-scale-ratio));
+    --fs-lg: calc(1em * var(--fs-scale-ratio) * var(--fs-scale-ratio));
+    --fs-xl: calc(1em * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio));
+    --fs-xxl: calc(1em * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio));
+    --fs-xxxl: calc(1em * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio) * var(--fs-scale-ratio));
+    --fs-icon-sm: var(--fs-sm);
+    --fs-icon-md: var(--fs-md);
+    --fs-icon-lg: var(--fs-lg);
+    --fs-icon-xl: var(--fs-xl);
+    --fs-icon-xxl: var(--fs-xxl);
+
+    // Line Height
+    --lh-heading: 1.2;
+    --lh-body: 1.6;
+}
+
+@include breakpoint-up(medium){
+
+    :root{
+        --fs-base: 1em;
+        --fs-scale-ratio: 1.25;
+    }
+
+}
+
+
+// Colors
+
+:root{
+    // Primary
+    --color-primary: #FF5E5E;
+    --color-primary-light: rgba(255, 94, 94, .15);
+    --color-primary-very-light: #FFFAFA;
+
+    // Shades
+    --color-white: #FFF;
+    --color-dark: #242942;
+    --color-gray: rgba(237, 242, 246, .75);
+    --color-gray-light: rgba(235, 237, 244, .4);
+    --color-gray-dark: #979797;
+
+
+    // Typography
+    --color-text: #242942;
+    --color-heading: #242942;
+
+    // Buttons
+    --color-btn-primary-bg: var(--color-primary);
+    --color-btn-primary-text: var(--color-white);
+    --color-btn-primary-hover: var(--color-primary-light);
+
+    --color-btn-ghost-bg: transparent;
+    --color-btn-ghost-text: var(--color-primary);
+    --color-btn-ghost-hover: var(--color-primary);
+    --color-btn-ghost-hover-text: var(--color-white);
+
+    --color-btn-disabled-bg: var(--color-gray);
+    --color-btn-disabled-text: var(--color-gray-light);
+
+    // Form
+    --color-form-bg: var(--color-white);
+    --color-input-bg: var(--color-gray);
+
+    // Icons
+    --color-icon-bg-light: var(--color-white);
+    --color-icon-bg-gray: var(--color-gray-dark);
+    --color-icon-hover: var(--color-primary);
+}
+
+// Spacing
+
+:root{
+
+    // Spacing Scale
+    --space-unit: 1em;
+    --space-xxxs: calc(var(--space-unit) * .25);
+    --space-xxs: calc(var(--space-unit) *.375);
+    --space-xs: calc(var(--space-unit) * .5);
+    --space-sm: calc(var(--space-unit) * .75);
+    --space-md: calc(var(--space-unit) * 1.25);
+    --space-lg: calc(var(--space-unit) * 2);
+    --space-xl: calc(var(--space-unit) * 3.25);
+    --space-xxl: calc(var(--space-unit) * 5.25);
+    --space-xxl: calc(var(--space-unit) * 8.5);
+
+}
+
+@include breakpoint-up(medium){
+
+    :root{
+        --space-unit: 1.25em;
+    }
+
+}
+
+// Others
+
+:root{
+
+    // Z Index
+    --z-back: -1;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    // Box Shadow
+    --bxs-header: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    --bxs-form: 0 4px 16px rgba(0,0,0,.10);
+    --bxs-item: 0 4px 16px rgba(0,0,0,.10);
+
+    //Header Height
+    --header-height: 4rem;
+
+    @include breakpoint-up(medium){
+        --header-height: 5rem;
+    }
+
+    // Button
+    --btn-font-size: var(--fs-sm);
+    --btn-radius: .25em;
+
+    // Form
+    --form-radius: 1em;
+
+    // Portfolio Item
+    --item-radius: 1em
+}

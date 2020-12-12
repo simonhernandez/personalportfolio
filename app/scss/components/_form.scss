@@ -1,0 +1,84 @@
+/*
+    ------------------------
+    -------- Form ----------
+    ------------------------
+*/
+
+.form{
+    background-color: var(--color-form-bg);
+    border-radius: var(--form-radius);
+    box-shadow: var(--bxs-form);
+    padding: var(--space-md);
+
+    [type="text"],
+    [type="password"],
+    [type="email"],
+    textarea{
+        padding: var(--space-xs) var(--space-sm);
+        background-color: var(--color-input-bg);
+        border-radius: .5rem;
+        width: 100%;
+
+        &:focus{
+            border-color: var(--color-primary);
+            outline-color: var(--color-primary);
+        }
+    }
+
+    & > *:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+
+
+    @include breakpoint-up(medium){
+        max-width: 33.75rem;
+
+        /* Reset Bottom Margins */
+        & > *:not(:last-child){
+            margin-bottom: initial;
+        }
+
+        /* Grid Properties */
+
+        display: grid;
+        grid-template-areas: "title title"
+                             "name email"
+                             "subject subject"
+                             "message message"
+                             "btn .";
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        // Grid Area Declarations
+
+        .heading{
+
+            &--3{
+                grid-area: title;
+            }
+        }
+
+        &__control{
+
+            &--name{
+                grid-area: name;
+            }
+            &--email{
+                grid-area: email;
+            }
+            &--subject{
+                grid-area: subject;
+            }
+        }
+
+        &__textarea{
+            grid-area: message;
+        }
+
+        .btn{
+            grid-area: btn;
+            width: 70%;
+        }
+    }
+}

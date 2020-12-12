@@ -1,0 +1,55 @@
+/*
+    ------------------------
+    --------- About --------
+    ------------------------
+*/
+
+.about{
+    text-align: center;
+
+
+    &__image-container{
+        width: 215px;
+        height: 215px;
+        margin: 0 auto;
+        background-color: var(--color-gray-light);
+        border: 3px solid var(--color-primary);
+        border-radius: 50%;
+        overflow: hidden;
+
+        img{
+            margin-top: var(--space-md);
+        }
+    }
+
+    &__text-container{
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-md);
+        }
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        header{
+            grid-column: 1/-1;
+        }
+        
+        &__image-container{
+            height: 400px;
+            width: 400px;
+            grid-column: 1 / 6;
+            align-self: center;
+        }
+        
+        &__text-container{
+            text-align: initial;
+            grid-column:  8 / -1;
+            align-self: center;
+        }
+    }
+}

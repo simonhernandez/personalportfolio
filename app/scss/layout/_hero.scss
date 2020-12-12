@@ -1,0 +1,38 @@
+/*
+    ------------------------
+    --------- Hero ---------
+    ------------------------
+*/
+
+.hero{
+    background-color: var(--color-primary-very-light);
+
+    &__text-container{
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-sm);
+        }
+    }
+
+    &__image-container{
+        max-width: 650px;
+        margin-left: auto;
+    }
+    
+    // Media Queries
+    
+    @media screen and (min-width: 1100px){
+        @include flex(sb, c, row);
+        
+        &__image-container{
+            max-width: 673px;
+            order: 2;
+            align-self: center;
+        }
+        
+        &__text-container{
+            align-self: center;
+
+        }
+    }
+}

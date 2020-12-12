@@ -1,0 +1,28 @@
+/*
+    ------------------------
+    ------- Social ---------
+    ------------------------
+*/
+
+.social{
+    @include flex(c, c, row);
+    
+    & > *:not(:last-child){
+        margin-right: 1rem;
+    }
+    
+    &__item{
+        color: var(--color-icon-bg-gray);
+        font-size: var(--fs-xxl);
+
+        &:hover{
+            color: var(--color-icon-hover);
+        }
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(large){
+        justify-content: flex-start;
+    }
+}

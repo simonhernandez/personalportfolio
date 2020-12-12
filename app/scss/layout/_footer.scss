@@ -1,0 +1,56 @@
+/*
+    ------------------------
+    -------- Footer --------
+    ------------------------
+*/
+
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem 0;
+
+    @include breakpoint-down(small){
+        .wrapper > *:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .nav{
+        &__list{
+            &:first-of-type{
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__item{
+            &:hover{
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .social{
+        &__item{
+            color: var(--color-icon-bg-light);
+        }
+    }
+
+    // Media Queries
+
+    @include breakpoint-up(large){
+        @include flex(sb, c, row);
+
+        .nav{
+            @include flex(sb, fs, row);
+
+            &__list{
+                &:first-of-type{
+                    margin-bottom: initial;
+                    margin-right: 3rem;
+                }
+            }
+
+        }
+    }
+}

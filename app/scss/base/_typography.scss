@@ -1,0 +1,93 @@
+/*
+    ------------------------
+    ------ Typography ------
+    ------------------------
+*/
+
+// Body
+
+body{
+    color: var(--color-text);
+    font-size: var(--fs-base);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body);
+}
+
+// Headings
+
+.heading{
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-heading);
+}
+
+.heading--1,
+.text-xxxl{
+    font-size: var(--fs-xxxl);
+}
+
+.text-xxl{
+    font-size: var(--fs-xxl);
+}
+.heading--2,
+.text-xl{
+    font-size: var(--fs-xl);
+}
+.heading--3,
+.text-lg{
+    font-size: var(--fs-lg);
+}
+.heading--4,
+.text-md{
+    font-size: var(--fs-md);
+}
+
+.text-small,
+small{
+    font-size: var(--fs-sm);
+}
+
+.text-xs{
+    font-size: var(--fs-xs);
+}
+
+// Navigation
+
+.nav{
+    &__logo,
+    &__link,
+    small{
+        font-family: var(--ff-secondary);
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-sm);
+    }
+}
+
+// Portfolio
+
+.portfolio{
+    .technology{
+        color: var(--color-primary);
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-xs);
+    }
+}
+
+// Contact
+.contact{
+    &__address{
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-bold);
+    }
+}
+
+
+// Utility Classes
+
+.truncate{
+    // Truncates text if it exceeds parent
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

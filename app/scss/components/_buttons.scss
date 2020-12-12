@@ -1,0 +1,51 @@
+/*
+    ------------------------
+    ------- Buttons --------
+    ------------------------
+*/
+
+.btn{
+    display: inline-block;
+    padding: var(--space-md);
+    border-radius: var(--btn-radius);
+    
+    white-space: nowrap;
+    line-height: 1;
+    font-size: var(--btn-font-size);
+    font-weight: var(--fw-bold);
+    letter-spacing: 1.07px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--small{
+        padding: var(--space-sm);
+    }
+
+    &--primary{
+        background-color: var(--color-btn-primary-bg);
+        color: var(--color-btn-primary-text);
+
+        &:hover{
+            opacity: .75;
+        }
+    }
+
+    &--ghost{
+        background-color: var(--color-btn-ghost-bg);
+        color: var(--color-btn-ghost-text);
+        border: 1px solid var(--color-btn-primary-bg);
+
+        &:hover{
+            background-color: var(--color-btn-ghost-hover);
+            color: var(--color-btn-ghost-hover-text);
+        }
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        background-color: var(--color-btn-disabled-bg);
+        color: var(--color-btn-disabled-text);
+        box-shadow: none;
+        opacity: .6;
+    }
+}

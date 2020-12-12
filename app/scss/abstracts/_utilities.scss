@@ -1,0 +1,25 @@
+/*
+    ------------------------
+    ------ Utilities -------
+    ------------------------
+*/
+
+.show-mobile-menu{
+    // Displays Mobile Menu when added with JS
+    right: 0 !important;
+}
+
+// Hide Utility Classes
+
+.hide-for-desktop{
+    @include breakpoint-up(medium){
+        display: none !important;
+    }
+}
+
+// Link Active State
+
+.active{
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
