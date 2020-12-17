@@ -460,24 +460,24 @@
                 </div>
 
                 <!-- Form -->
-                <form action="https://formspree.io/f/mgepnbjb" method="POST" class="form" data-aos="fade-left" data-aos-duration="1000">
+                <form action="https://formspree.io/f/mgepnbjb" method="POST" id="contactForm" class="form" data-aos="fade-left" data-aos-duration="1000">
                     <h3 class="heading heading--3">Send me a message!</h3>
 
                     <div class="form__control form__control--name">
-                        <input type="text" name="" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name">
                     </div>
 
                     <div class="form__control form__control--email">
-                        <input type="text" name="" id="email" placeholder="Email">
+                        <input type="text" name="email" id="email" placeholder="Email">
                     </div>
 
                     <div class="form__control form__control--subject">
-                        <input type="text" name="" id="subject" placeholder="Subject">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
                     </div>
 
-                    <textarea name="" id="textarea" cols="30" rows="10" class="form__textarea" placeholder="Message"></textarea>
-
-                    <!-- <input type="submit" value="SEND" class="btn btn--primary"> -->
+                    <div class="form__control form__control--text">
+                        <textarea name="message" id="textarea" cols="30" rows="10" class="form__textarea" placeholder="Message"></textarea>
+                    </div>
 
                     <button type="submit" class="btn btn--primary btn--small">SEND</button>
                 </form>
