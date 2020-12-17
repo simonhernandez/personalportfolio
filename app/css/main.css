@@ -391,7 +391,7 @@ small {
     /* Grid Properties */
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "title title" "name email" "subject subject" "message message" "btn .";
+        grid-template-areas: "title title" "name email" "subject subject" "message message" "btn status";
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -421,11 +421,16 @@ small {
     -ms-grid-column-span: 2;
     grid-area: subject;
   }
-  .form__textarea {
+  .form__control--text {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: message;
+  }
+  .form__status {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: status;
   }
   .form .btn {
     -ms-grid-row: 5;

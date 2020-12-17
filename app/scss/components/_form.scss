@@ -45,7 +45,7 @@
                              "name email"
                              "subject subject"
                              "message message"
-                             "btn .";
+                             "btn status";
 
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -70,10 +70,13 @@
             &--subject{
                 grid-area: subject;
             }
+            &--text{
+                grid-area: message;
+            }
         }
 
-        &__textarea{
-            grid-area: message;
+        &__status{
+            grid-area: status;
         }
 
         .btn{
