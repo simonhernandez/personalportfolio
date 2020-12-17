@@ -1,80 +1,44 @@
-/*
-    ------------------------
-    ------- Variables ------
-    ------------------------
-*/
-const contactForm = document.getElementById('contactForm');
-const namee = document.getElementById('name');
-const email = document.getElementById('email');
-const subject = document.getElementById('subject');
-const text = document.getElementById('text');
-var hasError;
+window.addEventListener("DOMContentLoaded", function() {
 
-/*
-    ------------------------
-    --------- Main ---------
-    ------------------------
-*/
-contactForm.addEventListener('submit', e => {
-    e.preventDefault();
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("contactForm");
+    var button = document.getElementById("formBtn");
+    var status = document.getElementById("formStatus");
 
-    checkInputs();
-});
-
-/*
-    ------------------------
-    ------- Functions ------
-    ------------------------
-*/
-function checkInputs(){
-    let nameValue = namee.value.trim();
-    let emailValue = email.value.trim();
-    let subjectValue = subject.value.trim();
-    let textValue = text.value.trim();
-    hasError = false;
-
-    if (nameValue === ''){
-        setErrorFor(namee);
-        hasError = true;
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      status.innerHTML = "Thanks!";
     }
 
-    if (emailValue === ''){
-        setErrorFor(email);
-    } else if (!isValid(emailValue)){
-        setErrorFor(email);
-        hasError = true;
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
     }
 
-    if (subjectValue === ''){
-        setErrorFor(subject);
-        hasError = true;
-    }
+    // handle the form submission event
 
-    if (textValue === ''){
-        setErrorFor(text);
-        hasError = true;
-    }
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
 
-    if (!hasError){
-        clearInputs();
-    }
-
-}
-
-function setErrorFor(input){
-    const formControl = input.parentElement;
-
-    formControl.classList.toggle('hasError');
-}
-
-function clearInputs(){
-    namee.value = '';
-    email.value = '';
-    subject.value = '';
-    text.value = '';
-    formControls.forEach(formControl => formControl.classList.remove('hasError'));
-}
-
-function isValid(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
